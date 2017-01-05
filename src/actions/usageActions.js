@@ -1,5 +1,4 @@
 import * as Type from './Type';
-import {get} from '../utils/httpUtils';
 
 export function increaseUsage(index, amount) {
     return {
