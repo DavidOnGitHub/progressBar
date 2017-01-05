@@ -1,0 +1,121 @@
+$break-point-lg: 768px;
+$break-point-sm: 320px;
+$bar-width-sm: 300px;
+$bar-width-md: 600px;
+$bar-width-lg: 700px;
+$font-size-text-sm: 16px;
+$font-size-text-md: 24px;
+$font-size-text-lg: 16px;
+
+.container {
+	width: $bar-width-lg;
+	margin: 0 auto;
+	@media (min-width: $break-point-sm) and (max-width: $break-point-lg) {
+		width: $bar-width-md;
+	}
+	@media (max-width: $break-point-sm) {
+		width: $bar-width-sm;
+	}
+}
+
+.page-title {
+	font-size: 40px;
+	text-align: center;
+}
+
+.progress-bar-frame {
+	width: $bar-width-lg;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #c6c6c6;
+	margin-top: 10px;
+	text-align: center;
+	font-size: $font-size-text-lg;
+	@media (min-width: $break-point-sm) and (max-width: $break-point-lg) {
+		width: $bar-width-md;
+		font-size: $font-size-text-md;
+	}
+	@media (max-width: $break-point-sm) {
+		width: $bar-width-sm;
+		font-size: $font-size-text-sm;
+	}
+}
+
+.progress-bar-progress-wrapper {
+	position: absolute;
+	width: $bar-width-lg;
+	height: 40px;
+	@media (min-width: $break-point-sm) and (max-width: $break-point-lg) {
+		width: $bar-width-md;
+	}
+	@media (max-width: $break-point-sm) {
+		width: $bar-width-sm;
+	}
+}
+
+.progress-bar-progress {
+	height: 40px;
+	background-color: lightblue;
+	z-index: 10;
+}
+
+.progress-bar-percentage {
+	position: absolute;
+	z-index: 11;
+}
+
+.select-usage-dropdown {
+	display: inline-block;
+	margin-right: 10px;
+	padding-left: 10px;
+	height: 30px;
+	width: 120px;
+	font-size: $font-size-text-lg;
+	@media (min-width: $break-point-sm) and (max-width: $break-point-lg) {
+		display: block;
+		width: $bar-width-md;
+		height: 45px;
+		font-size: $font-size-text-md;
+	}
+	@media (max-width: $break-point-sm) {
+		display: block;
+		width: $bar-width-sm;
+		height: 45px;
+		font-size: $font-size-text-sm;
+	}
+}
+
+.control-panel {
+	margin-top: 10px;
+}
+
+.control-button-section {
+	display: inline-block;
+	@media (min-width: $break-point-sm) and (max-width: $break-point-lg) {
+		display: block;
+		width: $bar-width-md;
+		margin-top: 10px;
+	}
+	@media (max-width: $break-point-sm) {
+		display: block;
+		width: $bar-width-sm;
+		margin-top: 10px;
+	}
+}
+
+.control-button {
+	margin-right: 8px;
+	font-size: $font-size-text-lg;
+	height: 30px;
+	width: 40px;
+	@media (min-width: $break-point-sm) and (max-width: $break-point-lg) {
+		font-size: $font-size-text-md;
+		height: 45px;
+		width: 80px;
+	}
+	@media (max-width: $break-point-sm) {
+		font-size: $font-size-text-sm;
+		height: 30px;
+		width: 40px;
+	}
+}

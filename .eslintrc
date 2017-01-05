@@ -1,0 +1,19 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "quotes": ["warn", "single"],
+    "no-debugger": "warn",
+    "no-extra-semi": "warn",
+    "eqeqeq": "warn",
+    "strict": "warn"
+  }
+}
